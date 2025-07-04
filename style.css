@@ -29,6 +29,7 @@ main {
 	}
 }
 #about {
+	margin-top: 150px;
 	display: flex;
 	flex: wrap;
 	justify-content: center;
@@ -51,7 +52,7 @@ main {
 	margin: 50px;
 	width: 500px;
 }
-#header {
+.header {
 	border: thin solid;
 	border-color: #eee transparent;
 	margin: 60px 0;
@@ -61,20 +62,21 @@ main {
 	padding: 15px;
 
 }
-#skills {	
-}
 .roll-1 {
 	display: flex;
-	flex: wrap;
+	flex-wrap: wrap;
 	width: 100%;
-	margin: 30px;
+	justify-content: center;
+}
+#skills {	
 }
 .skill {
 	width: 50%;
 	display: flex;
 	flex: wrap;
+	justify-content: center;
 	*{
-		margin: 10px;
+		margin: 15px;
 	}
 	p {
 		width: 90px;
@@ -102,4 +104,63 @@ main {
   padding-right: 10px;
   line-height: 10px;
   transition: width 0.5s ease;
+}
+#project {
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	width: 100%;
+	justify-content: center;
+}
+.project {
+	margin: 3%;
+	width: 40%;
+	justify-content: center;
+}
+#contact {
+	h3 {
+		font-size:  20px;
+		font-weight: 10px;
+		color:  #3c4258;
+		margin-bottom: 0;
+	}
+	p{
+		color:  #999fb3;
+		font-size:  16px;
+		margin-top:  18px;
+	}
+}
+form {
+	width: 500px;
+}
+input {
+	width: 350px;
+	border: thin solid #ddd;
+	background-color: #eee;
+	padding: 15px;
+	border-radius: 2px;
+	margin: 10px;
+	outline-color: #b825b8;
+}
+textarea {
+	width: 350px;
+	border: thin solid #ddd;
+	background-color: #eee;
+	padding: 15px;
+	border-radius: 2px;
+	margin: 10px;
+	height: 100px;
+	outline-color: #b825b8;
+}
+.submit {
+	color: white;
+	width: 380px;
+	background-color: #b825b8;
+	font-size: large;
+}
+#footer {
+	margin: 50px;
+	justify-content: center;
+	text-align: center;
 }

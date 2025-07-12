@@ -6,11 +6,29 @@
     <title>My Profile</title>
 
     <style>
-        table {
-            border: thin solid;
+        body {
+            margin: 0;
+        }
+        input,textarea {
+            width: 80%;
+            padding: 5px;
+            margin: 5px;
+        }
+        .profile_img {
+            padding: 10px;
+            border: thin solid #333;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .profile_txt {
+
+        }
+        @media only screen and (max-width: 768px) {
+            .profile_img {
+                width: calc(100% - 40px);
+            }
         }
     </style>
-
 </head>
 <body>
     <table>
@@ -20,11 +38,11 @@
         </tr>
     </table>
 
-    <div style="display: flex; justify-content: center; margin: 0 auto; width: 80%;">
-        <div style="padding: 20px;">
-            <img src="img/me.jpg" width="150">
+    <div class="profile" style="margin: 0 auto; width: 80%;">
+        <div class="profile_img" style="">
+            <img src="img/me.jpg" width="250">
         </div>
-        <div>
+        <div class="profile_txt">
             <h2>About me</h2>
             <p>
                 I'm <b>Oluwole Emmanuel</b> also known as Cachecoder, a Full-stack Software Engineer, a detail-driven developer dedicated to bringing your ideas to life, fully motivated and inspiring.  
@@ -43,19 +61,56 @@
         </ul>
     </div>
 
-    <table border="1">
+    <table border="1" width="60%">
         <tr>
             <td>
                 Skills
             </td>
-            <td><Progress></Progress></td>
+            <td>Level</td>
         </tr>
         <tr>
             <td>
                 HTML
             </td>
-            <td><progress></progress></td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>
+                CSS
+            </td>
+            <td>Intermidiate</td>
+        </tr>
+        <tr>
+            <td>
+                JavaScript
+            </td>
+            <td>Beginner</td>
+        </tr>
+        <tr>
+            <td>
+                PHP
+            </td>
+            <td>Intermidiate</td>
+        </tr>
+        <tr>
+            <td>
+                MySql
+            </td>
+            <td>Advance</td>
         </tr>
     </table>
+
+    <div style="width: 100%; border: thin solid #333; text-align: center; margin: 20px 0; border-color: #333 transparent;"><h2>Contact Me</h2></div>
+    <div style="border: thin solid #ddd; border-radius: 8px; width: 60%; margin: auto; text-align: center;">
+        <form>
+            <input type="text" placeholder="Enter your Name"><br>
+            <input type="email" placeholder="Enter Your Email"><br>
+            <textarea placeholder="Enter Your Message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer style="text-align: center;">
+        <p>Developed by <a href="https://www.cachecoder.site/"><em>CacheCoder</em></a></p>
+    </footer>
 </body>
 </html>

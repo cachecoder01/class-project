@@ -7,12 +7,15 @@
 
     <style>
         body {
-            margin: 0;
+            color: white;
+            font-family: 'poppins', sans-serif;
+            margin: 25px 15px;
         }
-        input,textarea {
-            width: 80%;
-            padding: 5px;
-            margin: 5px;
+        a {
+            color: blue;
+        }
+        h1 {
+            text-align: center;
         }
         .profile_img {
             padding: 10px;
@@ -20,27 +23,22 @@
             text-align: center;
             margin: 0 auto;
         }
-        .profile_txt {
-
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
         }
-        @media only screen and (max-width: 768px) {
-            .profile_img {
-                width: calc(100% - 40px);
-            }
+        th {
+            background-color: #ccc;
         }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td><img src="img/brand-logo.png" width="50"></td>
-            <td><h2>CacheCoder</h2></td>
-        </tr>
-    </table>
-
+    <div style="border: thin solid; background-color: blueviolet; border-radius: 8px; padding: 8px;">
+        <h1>My Profile Page</h1>
+    <hr>
     <div class="profile" style="margin: 0 auto; width: 80%;">
-        <div class="profile_img" style="">
-            <img src="img/me.jpg" width="250">
+        <div class="profile_img">
+            <img src="img/me.jpg" width="220">
         </div>
         <div class="profile_txt">
             <h2>About me</h2>
@@ -49,24 +47,16 @@
                 <br><br>
                 <em>... Let's collaborate and bring those ideas to live!</em>
             </p>
+            <p><a href="">Github</a> | <a href="">Linkedin</a> | <a href="">Twitter</a></p>
         </div>
-    </div>
-
-    <div>
-        <h3>My platforms</h3>
-        <ul>
-            <li><a href="https://github.com/cachecoder01">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/cachecoder02">Linkedin</a></li>
-            <li><a href="https://x.com/cachecoder02?t=skGRf9R9h5azUDYV7BzraA&s=08">X</a></li>
-        </ul>
     </div>
 
     <table border="1" width="60%">
         <tr>
-            <td>
+            <th>
                 Skills
-            </td>
-            <td>Level</td>
+            </th>
+            <th>Level</th>
         </tr>
         <tr>
             <td>
@@ -99,18 +89,10 @@
             <td>Advance</td>
         </tr>
     </table>
-
-    <div style="width: 100%; border: thin solid #333; text-align: center; margin: 20px 0; border-color: #333 transparent;"><h2>Contact Me</h2></div>
-    <div style="border: thin solid #ddd; border-radius: 8px; width: 60%; margin: auto; text-align: center;">
-        <form>
-            <input type="text" placeholder="Enter your Name"><br>
-            <input type="email" placeholder="Enter Your Email"><br>
-            <textarea placeholder="Enter Your Message"></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+    
     <footer style="text-align: center;">
         <p>Developed by <a href="https://www.cachecoder.site/"><em>CacheCoder</em></a></p>
     </footer>
+    </div>
 </body>
 </html>

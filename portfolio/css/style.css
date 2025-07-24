@@ -112,7 +112,7 @@ i {
 	margin: 30px;
 }
 .skill-name {
-	width: 100px;
+	width: 120px;
 }
 .progress-bar {
 	width: 90%;
@@ -137,6 +137,43 @@ i {
 .skills-container {
 	width: 85%;
 	margin: 20px auto;
+}
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+}
+.childs {
+	border: 2px solid #b825b8;
+	margin: 10px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.project-info {
+	background-color: #111;
+	bottom: 0;
+	position: absolute;
+	color: white;
+	padding: 5px;
+}
+form {
+	border-radius: 10px;
+	width: 50%;
+	justify-content: center;
+	margin: auto;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+input {
+	padding: 8px;
+	background-color: #eee;
+	border: #ddd;
+	width: 300px;
+	margin: 13px;
+	border-radius: 5px;
 }
 #footer {
 	margin: 50px;

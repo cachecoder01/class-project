@@ -14,125 +14,65 @@
 	</head>
 	<body>
 		
-		<nav>
-			<h2>Tech Name</h2>
+		<nav class="navbar">
+			<div class="brand">Portfolio</div>
+			<div class="menu">
+			  <a href="#About">About</a>
+			  <a href="#Skills">Skills</a>
+			  <a href="#Project">Project</a>
+			  <a href="#Contact">Contact</a>
+			</div>
 		</nav>
 
 		<main>
-			<section id="about">
-				<div style="">
-					<div class="profile-img"><img src="me.jpg" width="300"></div>
-					<div class="icon">
-						<i class="fab fa-instagram fa-2x"></i>
-						<i class="fab fa-linkedin fa-2x"></i>
-						<i class="fab fa-github fa-2x"></i>
-						<i class="fab fa-whatsapp fa-2x"></i>
+			<section id="About">
+				<div class="about">
+					<div class="child">
+						<div class="profile-card">
+							<img src="me.jpg" width="250">
+							<div class="icon">
+								<a href=""><i class="fab fa-instagram fa-2x"></i></a>
+								<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+								<a href=""><i class="fab fa-github fa-2x"></i></a>
+								<a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+							</div>
+						</div>
 					</div>
-				</div>				
-				<div class="bio" style="">
-					<h2>About Me</h2>
-					<p>Hi, i am CacheCoder, a passionate and detail-driven developer dedicated to bringing your ideas to life. with a strong foundation in computing science (programming), I specialize in Web Development, Software/App Development, AI/ML, UI/UX Design, Data Science, Consulting e.t.c.
-					</p>
-					
+					<div class="child">
+						<h1>About Me</h1>
+						<p class="bio">Hi, i am CacheCoder, a passionate and detail-driven developer dedicated to bringing your ideas to life. with a strong foundation in computing science (programming), I specialize in Web Development, Software/App Development, AI/ML, UI/UX Design, Data Science, Consulting e.t.c.</p>
+						<a href="cv.pdf" class="cv" download>Download CV</a>
+					</div>
 				</div>
 			</section>
 
-			<section id="skills">
+			<section id="Skills">
 				<div class="header">
-					<h2>Skills</h2>
+					<h1>Skills</h1>
 				</div>
-					<div class="roll-1" >
-						<div class="skill">
-							<P>HTML</P>
-  							<div class="progress-bar">
-  						  		<div class="progress" style="width: 95%;"></div>
-  							</div>
-							<span>95%</span>
+				<div class="skills-container">
+					<div class="skill">
+						<span class="skill-name">HTML</span>
+						<div class="progress-bar">
+							<div class="progress" style="--progress: 90%"></div>
 						</div>
-						
-						<div class="skill">
-							<p>MySQL</p>
-							  <div class="progress-bar">
-								<div class="progress" style="width: 95%;"></div>
-							  </div>
-							  <span>95%</span>
-						</div>
+						<span >90%</span>
 					</div>
-					<div class="roll-1">
-						<div class="skill">
-							<P>PHP</P>
-  							<div class="progress-bar">
-  						  		<div class="progress" style="width: 85%;"></div>
-  							</div>
-							<span>85%</span>
+					<div class="skill">
+						<span class="skill-name">CSS</span>
+						<div class="progress-bar">
+							<div class="progress" style="--progress: 80%"></div>
 						</div>
-						<div class="skill">
-							<p>CSS</p>
-							  <div class="progress-bar">
-								<div class="progress" style="width: 75%;"></div>
-							  </div>
-							  <span>75%</span>
-						</div>
+						<span>90%</span>
 					</div>
-					<div class="roll-1">
-						<div class="skill">
-							<P>JavaScript</P>
-  							<div class="progress-bar">
-  						  		<div class="progress" style="width: 45%;"></div>
-  							</div>
-							<span>45%</span>
-						</div>
-					</div>
-			</section>
+				</div>
+			</div>
 
-			<section id="project">
-				<div class="header">
-					<h2>portfolio</h2>
-				</div>
-				<div class="roll-1">
-					<div class="project">
-						<h3>Project One</h3>
-						<a href="">
-							<img src="cart.jpg" width="300">
-							<p>odokk cdjkf jd fhd fjkd f isbh iud d hd hfhd f hd abhdf dhfudbhfudhfu dhf udbfh d jjdj djd jdjid djd  dj djd dj djsjd s duwebweebwe j h ewedb ed bsdby s d sbedx  d fd b duyf dbibfd j</p></p>
-						</a>						
-					</div>
-					
-					
-			</section>
+		</main>
 
-			<section id="contact">
-				<div class="header">
-					<h2>contact</h2>
-				</div>
-				<div class="contact">
-						<form method="" action="">
-							<input type="text" placeholder="Name">
-							<input type="email" placeholder="Email">
-							<textarea placeholder="Message"></textarea>
-							<input type="submit" class="submit" value="Submit">
-						</form>
-					<div class="info">
-						<div>
-							<h3>Full Name</h3>
-							<p>career path</p>
-						</div>
-						<div>
-							<h3>Phone</h3>
-							<p>+234 9136279768</p>
-						</div>
-						<div>
-							<h3>Email</h3>
-							<p>example@gmail.com</p>
-						</div>
-						<div>
-							<h3>Address</h3>
-							<p>ypur location</p>
-						</div>
-					</div>
-				</div>
-			</section>
+				
 
+			
 			<section id="footer">
 				<p>&copy; All Right Reserved Developed By <a href="https://cachecoder.site">cachecoder</a></p>
 			</section>

@@ -4,64 +4,100 @@ body {
 	font-size: 16px;
 	width: 100%;
 }
-nav {
-	margin: 0;
-	top: 0;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	position: fixed;
-	width: 100%;
-	background-color: white;
-	padding: 10px;
+a {
+	color: #b825b8;
+	text-decoration: none;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #111;
+	padding: 15px 15px;
+	color: #fff;
+}
+.navbar .brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navbar .menu {
+	display: flex;
+	gap: 20px;
+}
+.navbar .menu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: color 0.3s;
+}
+.navbar .menu a:active {
+	color: #b825b8;
+}
+.navbar .menu a:hover {
+	font-size: 1.1rem;
+	color: #b825b8;
+}
+@media only screen and (max-width: 700px) {
+	.navbar {
+		padding: 15px 20px;
+	}
+	.navbar .menu a {
+		font-size: 0.8rem;
+	}
+	.navbar .menu a:hover {
+		font-size: 0.9rem;
+	}
+	.navbar .brand {
+		font-size: 1.2rem;
+	}
+	.navbar .menu {
+		gap: 10px;
+	}
+	.about {
+		flex-direction: column;
+	}
 }
 main {
-	margin-top: 150px;
-	
+	margin-top: 50px;	
 }
-#about {
+.about {
 	display: flex;
-	flex: wrap;
-	width: 60%;
+	width: 65%;
 	margin: 0 auto;
-	h2 {
-	text-transform: uppercase;
-	}
+	gap: 10px;
 }
-.profile-img {
-	width: 300px;
-	height: 330px;
-	justify-content: center;
-	border: thin solid #b825b8;
-	margin: auto;
-}
-.bio {
-	justify-content: center;
-	margin: 5px auto;
-	width: 100%;
-	padding: 8px 25px;
-
-}
-
-@media only screen and (max-width: 768px) {
-	#about {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-	}
-	.contact {
-		display: block;
-	}
-	
-}
-.icon{
-	background-color: #b825b8;
+.child {
+	flex: 1;
 	text-align: center;
-	padding: 5px;
-	z-index: 999;
+}
+.profile-card {
+	background-color: #b825b8;
+	width: 250px;
+	height: 300px;
+	overflow: hidden;
+	margin: auto;
 	position: relative;
 }
+.icon {
+	position: absolute;
+	background-color: #b825b8;
+	width: 250px;
+	bottom: 0;
+}
 i {
-	padding: 10px;
 	color: aqua;
+	padding: 8px;
+}
+.bio {
+	text-align: justify;
+	color: #333;
+}
+.cv {
+	background-color: #b825b8;
+	width: 200px;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
 }
 .header {
 	border: thin solid;
@@ -70,113 +106,37 @@ i {
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 15px;
-
-}
-.roll-1 {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: center;
-}
-#skills {	
 }
 .skill {
-	width: 50%;
 	display: flex;
-	flex: wrap;
-	justify-content: center;
-	*{
-		margin: 15px;
-	}
-	p {
-		width: 90px;
-	}
-	span {
-		color: #b825b8;
-	}
+	margin: 30px;
+}
+.skill-name {
+	width: 100px;
 }
 .progress-bar {
-  background-color: #eee;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 10px;
-  width: 60%;
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+	width: 90%;
+	height: 10px;
+	background: #eee;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: auto;
 }
-
 .progress {
-	margin: 0;
-  height: 100%;
-  border-radius: 10px;
-  background-color: #b825b8;
-  color: #fff;
-  text-align: right;
-  padding-right: 10px;
-  line-height: 10px;
-  transition: width 0.5s ease;
-}
-#project {
-	a {
-		color: black;
-		text-decoration: none;
-	}
-	width: 100%;
-	justify-content: center;
-}
-.project {
-	margin: 3%;
-	width: 40%;
-	justify-content: center;
-}
-#contact {
-	h3 {
-		font-size:  20px;
-		font-weight: 10px;
-		color:  #3c4258;
-		margin-bottom: 0;
-	}
-	p{
-		color:  #999fb3;
-		font-size:  16px;
-		margin-top:  18px;
-	}
-}
-.contact {
-	display: flex;
-	width: 60%;
-	margin: auto;
-}
-.info {
-	margin: auto;
-}
-form {
-	margin: auto;
-}
-input {
-	width: 350px;
-	border: thin solid #ddd;
-	background-color: #eee;
-	padding: 15px;
-	border-radius: 2px;
-	margin: 10px;
-	outline-color: #b825b8;
-}
-textarea {
-	width: 350px;
-	border: thin solid #ddd;
-	background-color: #eee;
-	padding: 15px;
-	border-radius: 2px;
-	margin: 10px;
-	height: 100px;
-	outline-color: #b825b8;
-}
-.submit {
-	color: white;
-	width: 380px;
 	background-color: #b825b8;
-	font-size: large;
+	height: 100%;
+  	width: 0;
+  	border-radius: 10px;
+  	animation: fillProgress 1.5s forwards;
+}
+@keyframes fillProgress {
+	to {
+	  width: var(--progress);
+	}
+  }
+.skills-container {
+	width: 85%;
+	margin: 20px auto;
 }
 #footer {
 	margin: 50px;

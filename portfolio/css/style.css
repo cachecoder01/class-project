@@ -162,18 +162,29 @@ i {
 }
 form {
 	border-radius: 10px;
-	width: 50%;
 	justify-content: center;
 	margin: auto;
+	width: 350px;
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
+	padding: 10px;
 }
 input {
-	padding: 8px;
+	padding: 10px;
 	background-color: #eee;
 	border: #ddd;
 	width: 300px;
 	margin: 13px;
-	border-radius: 5px;
+	border-radius: 3px;
+	outline: none;
+	flex-direction: column;
+}
+input:focus {
+	border: thin solid #b825b8;
+	box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+input.submit {
+	background-color: #b825b8;
+	width: 320px;
 }
 #footer {
 	margin: 50px;
